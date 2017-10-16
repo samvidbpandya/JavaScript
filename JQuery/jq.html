@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<style>
+		.red {color : red;}
+	</style>
+	<script type="text/javascript" src = "jquery.js">
+		
+	</script>
+	<script>
+		$(document).ready (function() {
+			//$('h1.myClass').html('This heading from Jquery');
+			$('button').click(function(){
+				$('h1').html('Changed Text').slideToggle(200);
+			})
+		});
+		
+	</script>
+</head>
+
+<body>
+	<!--<h1 class="myClass" >This is heading</h1>
+	<h1> Here is another heading </h1>-->
+	<!--<script>
+		$('h1').addClass('red');
+	</script> "addClass('red');"-->
+	<button> Change Text </button>
+	<h1> This is a text to change </h1>
+</body>
+</html>

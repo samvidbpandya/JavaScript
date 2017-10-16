@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Events</title>
+	<script type="text/javascript">
+		//function samvidPandya(){
+			//alert('Hi I am Sam');
+		//	var heading = document.getElementById('heading');
+		//	heading.innerHTML ='No Kidding';
+
+		//}
+
+		//function samvidPandyaBack(){
+			//alert('Hi I am Sam');
+		//	var heading = document.getElementById('heading');
+		//	heading.innerHTML ='This is a heading';
+
+		//}
+		function focusIn(){
+			alert('I am in the field');
+		}
+
+		function blurOut(){
+			alert('I am out of the field');
+		}
+	</script>
+	
+	
+</head>
+<body>
+	
+	<!--onClick Example -->
+	
+	<!--<button onclick="return samvidPandya()"> Click Me </button>-->
+	
+	<!--onload Example  write with body opening tag-->
+	
+	<!--onload="return samvidPandya()"-->
+
+	<!--onmouseover and onmouseout  Example -->
+
+	<!--<h1 id = "heading" onmouseover="return samvidPandya()" onmouseout="return samvidPandyaBack()"> This is a heading </h1>-->
+
+	<!--Form  Example -->
+
+	<form>
+		<!--Name: <input type="text" name = "name" /> <br />
+		<input type="submit" value = "Submit" />-->
+
+		Name: <input onfocus="return focusIn()" onblur="return blurOut()" type = "text" name = "name" /> <br />
+		<input type="submit" value = "Submit" />
+	</form>
+
+
+</body>
+</html>
